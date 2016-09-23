@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        var x = 10;
+        function fun()
+        {
+            y = 10;
+           // alert(x);
+            fun2();
+        }
+
+        function fun2() {
+            alert(y);
+        }
+
+        function arithmaticOps()
+        {
+            var z = 10;
+            z += 10;
+            alert(z);
+            result = document.getElementById('X').value - document.getElementById('Y').value;
+            document.getElementById('XY').value = result;
+        }
+
+        function conditions()
+        {
+            //result = document.getElementById('X').value - document.getElementById('Y').value;
+            //if(!isNaN(result))
+            //{
+            //    document.getElementById('XY').value = result;
+            //}
+            var x= parseInt(document.getElementById('X').value);
+            switch (x)
+            {
+                case 1 : alert('Sunday')
+                        break;
+                case 2 : alert('Monday')
+                            break;
+                case 3 : alert('Tuesday')
+                            break;
+                case 4 : alert('Wednesday')
+                            break;
+                case 5 : alert('Thursday')
+                            break;
+                case 6 : alert('Friday')
+                            break;
+                case  7: alert('Saturday')
+                            break;
+            }
+
+        }
+
+        function looping()
+        {
+            var y = parseInt(document.getElementById('Y').value);
+            var XY = 0;
+
+            for(var i=1;i <= y ; i++)
+            {
+                XY += i;
+            }
+
+            document.getElementById('XY').value = XY;
+        }
+
+        function array()
+        {
+            var arr = ["xyz","A","Okay","Hai","Hello","Gm"];
+            //for(var i=0 ; i< x.length ; i++)
+            //{
+            //    alert(x[i]);
+            //}
+
+            //for(i in arr)
+            //{
+            //    alert(arr[i]);
+            //}
+
+           // arr.push("1");
+
+            //var x = arr.pop();
+            //alert("Removed value" + x);
+
+            //delete arr[2];
+            // alert('Shifted value ' + x)
+
+            //var temp = arr.slice(2, 4);
+
+            //arr.sort();
+            arr.reverse();
+
+            alert(arr.join('_'));
+        }
+        function img1()
+        {
+            document.getElementById('img').style.height = "200px";
+            document.getElementById('img').style.width = "200px";
+        }
+
+        function img2() {
+            document.getElementById('img').style.height = "100px";
+            document.getElementById('img').style.width = "100px";
+        }
+
+    </script>
+</head>
+<body>
+    X : <input id="X" type="text" /> </br>
+    Y : <input id="Y" type="text" /> </br>
+
+    X + Y : <input id="XY" type="text" />
+
+    <input id="Button1" type="button" value="Add" onclick="array()" />
+
+    <img src="download.jpg" id="img" width="100px" height="100px" onmouseover="img1()" onmouseout="img2()"/>
+
+</body>
+</html>
