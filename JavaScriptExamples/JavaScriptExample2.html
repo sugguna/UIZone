@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        var x=5
+        //alert(x != "5")
+
+        function validate()
+        {
+           // var x = document.getElementById("Text1").value;
+
+            
+            var x = document.getElementById("Select1").selectedIndex;
+            alert(x)
+        }
+
+    </script>
+</head>
+<body>
+    <form id="form1" name="form1" action="http://www.google.com"  onsubmit="return validate()">
+        <!--<input id="Text1" type="text" name="Text1" required/>
+        <input id="Radio1" type="radio" value="male" name="R" required/>M
+        <input id="Radio2" type="radio" value="female" name="R" required/>F</br>
+        <input id="Checkbox1" type="checkbox" name="C" required/>
+        <input id="Checkbox2" type="checkbox" name="C" required/>
+        <input id="Checkbox3" type="checkbox" name="C" required/>-->
+        <select id="Select1"  name="okay" required>
+            <option selected disabled value="Select">Select</option>
+            <option value="hai">hai</option>
+            <option value="Hello">hello</option>
+        </select>
+        <input id="Submit1" type="submit" value="submit"/>
+
+    </form>
+
+</body>
+</html>
