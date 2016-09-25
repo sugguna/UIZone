@@ -3,20 +3,7 @@
 <head>
     <title></title>
 	<meta charset="utf-8" />
-    <script>
-        var x=5
-        //alert(x != "5")
-
-        function validate()
-        {
-           // var x = document.getElementById("Text1").value;
-
-            
-            var x = document.getElementById("Select1").selectedIndex;
-            alert(x)
-        }
-
-    </script>
+    
 </head>
 <body>
     <form id="form1" name="form1" action="http://www.google.com"  onsubmit="return validate()">
@@ -26,6 +13,8 @@
         <input id="Checkbox1" type="checkbox" name="C" required/>
         <input id="Checkbox2" type="checkbox" name="C" required/>
         <input id="Checkbox3" type="checkbox" name="C" required/>-->
+        <p>Hai</p>
+        <p>Hello</p>
         <select id="Select1"  name="okay" required>
             <option selected disabled value="Select">Select</option>
             <option value="hai">hai</option>
@@ -34,6 +23,26 @@
         <input id="Submit1" type="submit" value="submit"/>
 
     </form>
+
+    <script>
+        //var x=5
+        ////alert(x != "5")
+
+        //function validate()
+        //{
+        //   // var x = document.getElementById("Text1").value;
+
+
+        //    var x = document.getElementById("Select1").selectedIndex;
+        //    alert(x)
+        //}
+
+        var y = document.getElementsByTagNameNS("http://www.google.com",'input')
+        alert(y.length);
+        var x = '{ "CustomerID": 2, "CustomerName": "Siva", "Orders": [{ "OrderID": 1, "ProductName": "iPhone", "Price": "500.00$" }, { "OrderID": 2, "ProductName": "iPod", "Price": "200.00$" }] }'
+        var js = JSON.parse(x);
+        alert(js.Orders[1].ProductName)
+    </script>
 
 </body>
 </html>

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        function fun()
+        {
+            var x = document.getElementById("selection").selectedIndex;
+            switch (x)
+            {
+                case 1: document.getElementById('emotion').setAttribute('src', 'Smile.jpg')
+                    break;
+                case 2: document.getElementById('emotion').src = "Sad.png";
+                    break;
+                case 3: document.getElementById('emotion').src = "Angry.jpg";
+                    break;
+                default: document.getElementById('emotion').src = "";
+            }
+        }
+
+        function fun1(id)
+        {
+            id.style.visibility = "hidden";
+           // window.open("", "", "width=200,height=100");
+            var myWindow = window.open("", "MsgWindow", "width=200,height=100");
+            myWindow.document.write("<p>This is 'MsgWindow'. I am 200px wide and 100px tall!</p>");
+        }
+        function fun2(id) {
+            id.style.visibility = "visible";
+        }
+       
+
+    </script>
+</head>
+<body>
+    <img id="emotion" src="" alt="Yor smily will come here..!!" width="200px" height="200px"/>
+    <select onchange="fun()" id="selection">
+        <option value="0" selected>Select</option>
+        <option value="1">Smile</option>
+        <option value="2">Sad</option>
+        <option value="3">Angry</option>
+    </select>
+
+    <input id="Button1" type="button" value="Click Me..!!" onmouseover="fun1(this)" onmouseout="fun2(this)" />
+    <input id="Button1" type="button" value="Click Me..!!" onmouseover="fun1(this)" onmouseout="fun2(this)"/>
+</body>
+</html>
