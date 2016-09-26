@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+
+        //var text = '{"cname":"xyz","CID":1001,"Orders":[{"OrderID":1,"Product":"iPhone","Price":"600.00"},{"OrderID":2,"Product":"iPod","Price":"200.00"}]}';
+        //var customer = JSON.parse(text);
+        //alert(customer.Orders[0].Product);
+        //alert(customer.Balance);
+
+        function validate()
+        {
+            var age = parseInt(document.getElementById("Text1").value);
+            if(age < 0 || age > 100)
+            {
+                alert("Wrong age..!!");
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form id="myform" action="http://www.google.com" onsubmit="return validate()">
+
+        Age : <input id="Text1" type="text" />
+        <br />
+        <input id="Radio1" type="radio" name="Gender" required/> M
+        <input id="Radio2" type="radio" name="Gender" required/> F
+        <br />
+        <input id="Checkbox1" type="checkbox" name="Lan" required/> English
+        <input id="Checkbox2" type="checkbox" name="Lan" required checked/> Telugu
+        <br />
+        <select id="Select1" required>
+            <option value="1"> Option 1</option>
+            <option value="2" selected> Option 2</option>
+        </select>
+        <input id="Submit1" type="submit" value="submit" />
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <input class="c" id="Text2" type="text" name="txt" />
+    <p onclick="fun(this)" id="p1">Hello world..!!</p>
+    <p onclick="fun(this)" id="p1">Hello..!!</p>
+    <p onclick="fun(this)" id="p1">Okay..!!</p>
+
+    <input id="Button1" type="button" value="Close" onclick="close1()"/>
+    <img src="Smile.jpg" id="im"/>
+
+    <script>
+        function fun(id)
+        {
+            alert(id.innerHTML);
+        }
+        function close1()
+        {
+            window.open("http://www.google.com")
+        }
+    </script>
+
+</body>
+</html>
