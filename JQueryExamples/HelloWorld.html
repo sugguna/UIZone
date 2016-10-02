@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+
+        //$(document).ready(function () {
+        //    alert("Hellow World..!!");
+        //});
+
+
+        $(function () {
+           // alert("Hellow World..!!");
+            $("p.xyz").click(function () {
+
+                $(this).hide();
+
+            })
+
+        });
+
+
+
+    </script>
+
+    <style>
+      #p1{
+
+      }
+      .xyz{
+          color:green;
+      }
+    </style>
+</head>
+<body>
+   <p class="xyz">1.Click me to Hide..!!</p>
+   <p>2.Click me to Hide..!!</p>
+   <p class="xyz">3.Click me to Hide..!!</p>
+
+    <input id="Button1" type="button" value="button" class="xyz"/>
+</body>
+</html>
