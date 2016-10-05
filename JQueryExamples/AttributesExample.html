@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#Button1").click(function () {
+                $("input[value $='man'],[value ^='man']").css({ border: "2px solid red" });
+            });
+        });
+
+
+    </script>
+</head>
+<body>
+    <input id="Text1" type="text" value="I am man"/>
+    <input id="Text1" type="text" value="Hi man how are you"/>
+    <input id="Text2" type="text" value="man this is good"/>
+    <input id="Text1" type="text" value="Hi mannn"/>
+    <input id="Text1" type="text" value="How are you man"/>
+    <input id="Text1" type="text" value="man" />
+    <input id="Button1" type="button" value="button" />
+</body>
+</html>

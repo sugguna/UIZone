@@ -9,9 +9,22 @@
         $(document).ready(function () {
            // alert("Hello world..!!");
 
-            $("*").click(function () {
+            //$("*").click(function () {
 
-                $(this).css("border", "1px solid red");
+            //    $(this).css("border", "1px solid red");
+            //});
+
+            ////$("input[id='Button1'][value='button']").click(function () {
+            ////    $(this).hide();
+            ////});
+            //$("p:not([id='Button1'])").css({ color: "red" });
+
+            $("input[id='Button1']").click(function () {
+
+                $("input:checkbox:not(:checked)").each(function () {
+                    $(this).hide();
+                })
+                    
             });
         });
 
@@ -28,6 +41,11 @@
     <p class="a">Click me i will disapiar2..!!</p>
     <p id="hai">Click me i will disapiar3..!!</p>
 
+    <input id="Button1" type="button" value="button" />
+    <input id="Checkbox1" type="checkbox"  />
+    <input id="Checkbox1" type="checkbox" />
+    <input id="Checkbox1" type="checkbox" />
+    <input id="Checkbox1" type="checkbox" />
     <input id="Text1" type="text" class="a"/>
 
 </body>

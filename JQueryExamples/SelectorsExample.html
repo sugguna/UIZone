@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#Button2").click(function () {
+                
+                //$(this).css("color", "red");
+                $("p,h1").hide();
+            });
+
+            $("#Button3").click(function () {
+
+                //$(this).css("color", "red");
+                $("p,h1").show();
+            });
+
+        });
+
+    </script>
+
+    <style>
+        .xyz{
+            color:red;
+        }
+        #Button2{
+            color:green;
+        }
+        p,h1{
+
+        }
+
+    </style>
+</head>
+<body>
+    <p>click me to hide1..!!</p>
+    <p class="xyz">click me to hide2..!!</p>
+    <p>click me to hide3..!!</p>
+    <h1>I am Header</h1>
+    <input id="Button1" type="button" value="button1" class="xyz"/>
+    <input id="Button2" type="button" value="Hide Red" />
+    <input id="Button3" type="button" value="Un Hide Red" />
+    <input id="Password1" type="password" />
+    <input id="Checkbox1" type="checkbox" />
+
+</body>
+</html>
